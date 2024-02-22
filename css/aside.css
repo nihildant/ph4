@@ -3,8 +3,8 @@ aside {
   width: 200px;
   height: 100%;
   right: -100px;
-  background-color: #2f3339;
   top: 0;
+  background-color: #2f3339;
   min-height: 600px;
   transition: 1s;
   z-index: 1;
@@ -19,11 +19,11 @@ aside .wrap {
 }
 aside .wrap h2 {
   text-transform: uppercase;
-  color: white;
-  font-size: 16px;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 aside .wrap ul.list {
   display: grid;
@@ -37,55 +37,43 @@ aside .wrap ul.list > li h3 {
   height: 100%;
   position: relative;
 }
-
 aside .wrap ul.list > li h3::before{
-  content: "";
+  content:"";
   display: block;
   width: 0%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
-/*   trasition: 0.3s; 충돌*/
+  transition: 0.3s;
 }
 aside .wrap ul.list > li h3.current::before{
-/*   width: 100%; */
-  animation-name: wide;
-  animation-delay: 0.3s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-}
-@keyframes wide{
-  100%{
-    width: 100%
-  }
+   width: 100%;
 }
 aside .wrap ul.list > li:nth-child(1) h3::before{
-  background-color: #ffc100;
+ background-color: orange;
 }
 aside .wrap ul.list > li:nth-child(2) h3::before{
-  background-color: #9CD971;
+ background-color: yellow;
 }
 aside .wrap ul.list > li:nth-child(3) h3::before{
-  background-color: #FF4D00;
+background-color: green;
 }
 aside .wrap ul.list > li:nth-child(4) h3::before{
-  background-color: #F2274C;
+ background-color: blue;
 }
 aside .wrap ul.list > li:nth-child(5) h3::before{
-  background-color: #9450F2;
+ background-color: red;
 }
 aside .wrap ul.list > li:nth-child(6) h3::before{
-  background-color: #9ac5e5;
+ background-color: gold;
 }
 aside .wrap ul.list > li:nth-child(7) h3::before{
-  background-color: #01637A;
+ background-color: cyan;
 }
-aside .wrap ul.list > li:nth-child(8) h3::before{
-  background-color: #00AEC2;
+aside .wrap ul.list > li:nth-child(9) h3::before{
+ background-color:  brown;
 }
-
 aside .wrap ul.list > li h3 a {
   height: 100%;
   display: flex;
@@ -94,12 +82,11 @@ aside .wrap ul.list > li h3 a {
   font-size: 13px;
   flex-direction: column;
   gap: 5px;
-  color: #777;
+  color: #bba7a7;
   position: relative;
 }
-
 aside .wrap ul.list > li h3 a::before{
-  content: "";
+  content:""; 
   width: 41px;
   height: 41px;
   display: block;
@@ -113,30 +100,29 @@ aside .wrap ul.list > li:nth-child(2) h3 a::before{
   background-position-y: -41px;
 }
 aside .wrap ul.list > li:nth-child(3) h3 a::before{
-  background-position-y: calc(-41px *2);
+  background-position-y: calc(-41px * 2);
 }
 aside .wrap ul.list > li:nth-child(4) h3 a::before{
-  background-position-y: calc(-41px *3);
+  background-position-y: calc(-41px * 3);
 }
 aside .wrap ul.list > li:nth-child(5) h3 a::before{
-  background-position-y: calc(-41px *4);
+  background-position-y: calc(-41px * 4);
 }
 aside .wrap ul.list > li:nth-child(6) h3 a::before{
-  background-position-y: calc(-41px *5);
+  background-position-y: calc(-41px * 5);
 }
 aside .wrap ul.list > li:nth-child(7) h3 a::before{
-  background-position-y: calc(-41px *6);
+  background-position-y: calc(-41px * 6);
 }
 aside .wrap ul.list > li:nth-child(8) h3 a::before{
-  background-position-y: calc(-41px *7);
+  background-position-y: calc(-41px * 7);
 }
-
 aside .wrap ul.list > li ul.listsub {
   position: absolute;
   right: 0;
   top: 0;
-  height: 100%;
   /*! display: none; */
+  height: 100%;
   padding-top: 30px;
   box-sizing: border-box;
 }
@@ -146,35 +132,46 @@ aside .wrap ul.list > li ul.listsub::before{
   display: block;
   width: 0%;
   height: 100%;
-  transition: 0.3s;
+/*   transition: 0.3s; */
   top: 0;
 }
 aside .wrap ul.list > li ul.listsub.wide::before{
-  width: 100%;
+/*   width: 100%; */
+  animation-name: wide;
+  animation-delay: 0.3s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function:ease-out;
+  a
+}
+@keyframes wide{
+  100%{
+     width: 100%;
+  }
 }
 aside .wrap ul.list > li:nth-child(1) ul.listsub::before{
-  background-color: #ffc100;
+  background-color: orange;
 }
 aside .wrap ul.list > li:nth-child(2) ul.listsub::before{
-  background-color: #9CD971;
+  background-color: yellow;
 }
 aside .wrap ul.list > li:nth-child(3) ul.listsub::before{
-  background-color: #FF4D00;
+  background-color: green;
 }
 aside .wrap ul.list > li:nth-child(4) ul.listsub::before{
-  background-color: #F2274C;
+  background-color: blue;
 }
 aside .wrap ul.list > li:nth-child(5) ul.listsub::before{
-  background-color: #9450F2;
+  background-color: red;
 }
 aside .wrap ul.list > li:nth-child(6) ul.listsub::before{
-  background-color: #9ac5e5;
+  background-color: gold;
 }
 aside .wrap ul.list > li:nth-child(7) ul.listsub::before{
-  background-color: #01637A;
+  background-color: cyan;
 }
 aside .wrap ul.list > li:nth-child(8) ul.listsub::before{
-  background-color: #00AEC2;
+  background-color:  brown;
 }
 aside .wrap ul.list > li ul.listsub li {
   position: relative;

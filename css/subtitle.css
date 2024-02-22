@@ -26,14 +26,14 @@ div#subtitle .titleani>button::before{
 div#subtitle .titleani>button.slick-prev::before{
     background-image: url(../img/left-arrow.svg);
 }
+div#subtitle .titleani>button.slick-prev:hover::before{
+    background-image: url(../img/left-arrow-black.svg);
+}
 div#subtitle .titleani>button.slick-next::before{
     background-image: url(../img/right-arrow.svg);
 }
-div#subtitle .titleani>button.slick-prev:hover::before{
-    background-image: url(../img/left-arrowB.svg);
-}
 div#subtitle .titleani>button.slick-next:hover::before{
-    background-image: url(../img/right-arrowB.svg);
+    background-image: url(../img/right-arrow-black.svg);
 }
 div#subtitle .slick-active button::before{
   color: #2a98d5;
@@ -43,7 +43,7 @@ div#subtitle .slick-prev{
   left: 30px;
 }
 div#subtitle .slick-next{
-  right: 60px;
+  right: 30px;
 }
 div#subtitle .wrap img {
 
