@@ -40,10 +40,10 @@ div#subtitle .slick-active button::before{
   transform: scale(1.5);
 }
 div#subtitle .slick-prev{
-  left: 30px;
+  left: 190px;
 }
 div#subtitle .slick-next{
-  right: 30px;
+  right: 190px;
 }
 div#subtitle .wrap img {
 

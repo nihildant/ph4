@@ -7,9 +7,8 @@ footer a{
   color: #7b7b7b;
 }
 footer div.wrap {
- 
   /*! max-width: 100%; */
-  padding-top: 46px;
+  padding: 46px 0;
 }
 footer div.wrap ul.fnb {
   justify-content: space-between;
@@ -37,7 +36,7 @@ footer div.wrap ul.fnb li:nth-child(1) ul.sublist{
   column-gap: 9px;
 }
 footer div.wrap ul.fnb li a {
-  line-height: 1.4;
+  line-height: 1.9;
   display: block;
 }
 footer div.wrap ul.fnb li:nth-child(4) a{
@@ -104,15 +103,15 @@ footer div.wrap ul.fnb2::after{
   transform: translateY(50px);
 }
 footer div.wrap address {
- 
   text-align: center;
+  font-size: 11px;
 }
 footer div.wrap address a {
   
 }
 footer div.wrap p.copyright {
-  
   text-align: center;
+  font-size: 11px;
 }
 footer div.wrap div.corp {
  
